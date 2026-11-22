@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: week-01
+  jackson:
+    deserialization:
+      fail-on-numbers-for-enums: true
+  mvc:
+    problemdetails:
+      enabled: true
+
+server:
+  port: ${PORT:8080}
+
+app:
+  tasks:
+    seed-demo: ${TASKS_SEED_DEMO:true}
